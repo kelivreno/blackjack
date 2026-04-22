@@ -4,6 +4,7 @@ let sum = firstCard+secondCard
 let hasBlackJack = false
 let isAlive = true // to see if they're still alive in the game
 let message = ""
+let messageEl = document.getElementById("message-el")
 
 function startGame() {
 
@@ -16,5 +17,5 @@ if (sum <= 20) {
     message = "You're out of the game! 😭"
     isAlive = false
 }
-console.log(message)
+messageEl.textContent = message  
 }
