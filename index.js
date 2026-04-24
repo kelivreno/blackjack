@@ -9,7 +9,12 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 // let sumEl = document.querySelector("#sum-el") ("body") //need hastag to specify it is an id
 // if it's a class, use a ".", so it will be (".sum-el")
+
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
 sumEl.textContent="Sum: " + sum
 cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
 if (sum <= 20) {
