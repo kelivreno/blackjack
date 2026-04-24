@@ -23,3 +23,8 @@ if (sum <= 20) {
 }
 messageEl.textContent = message  
 }
+
+function newCard(){
+    msg = "Drawing a new card from the deck!"
+    console.log()
+}
