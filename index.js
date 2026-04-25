@@ -12,8 +12,16 @@ let cardsEl = document.getElementById("cards-el")
 // if it's a class, use a ".", so it will be (".sum-el")
 
 function getRandomCard() {
-    let randomCard = Math.floor(Math.random()*13) + 1
-    return randomCard
+    let randomcard = Math.floor( Math.random()*13 ) + 1
+    if (randomcard === 1) {
+        // if 1     -> return 11
+        return 11
+    } else if (randomcard >=11 && randomcard <=13) {
+        // if 11-13 -> return 10
+        return 10
+    } else {
+        return randomcard
+    }
 }
 
 function startGame() {
