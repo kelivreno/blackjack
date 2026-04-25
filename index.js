@@ -36,5 +36,6 @@ function newCard(){
 
     let card = 2
     sum += card
+    cards.push(card)
     startGame()
 }
