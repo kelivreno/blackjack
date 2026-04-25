@@ -8,6 +8,15 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 // let sumEl = document.querySelector("#sum-el") ("body") //need hastag to specify it is an id
 // if it's a class, use a ".", so it will be (".sum-el")
+let player = {
+    name: "Kel",
+    chips: 145
+}
+// let playerName = "Kel"
+// let playerChips = 145
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": " + "$" + player.chips
 
 function getRandomCard() {
     let randomcard = Math.floor( Math.random()*13 ) + 1
