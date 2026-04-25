@@ -30,6 +30,9 @@ function startGame() {
     // Re-assign the cards and sum variables so that the game can start
     cards.pop(firstCard,secondCard)
     cards.push(firstCard,secondCard)
+    // beter example:
+    // cards = [firstCard, secondCard]
+    // sum = firstCard + secondCard
     sum = 0
     sum += firstCard + secondCard
     renderGame()
